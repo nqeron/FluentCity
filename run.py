@@ -15,7 +15,8 @@ def main():
     word = get_word()
     if not word:  # If there is no word, then
         return  # end the program
-    anagram_finder.search_for_word_in_dict(word,DICTIONARY_PATH)
+    results = anagram_finder.search_for_word_in_dict(word,DICTIONARY_PATH)
+    print("Found results : {}".format(results))
 
 
 def get_word():
